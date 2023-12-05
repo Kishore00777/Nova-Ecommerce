@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Nova-Ecommerce/static/css/main.e6c13ad2.css",
+    "main.js": "/Nova-Ecommerce/static/js/main.75c7c8d0.js",
+    "static/js/787.4c8b65ad.chunk.js": "/Nova-Ecommerce/static/js/787.4c8b65ad.chunk.js",
+    "static/media/Nova Banner.svg": "/Nova-Ecommerce/static/media/Nova Banner.5936f6efed585aad013f737f1f66d680.svg",
+    "static/media/pro img.jpg": "/Nova-Ecommerce/static/media/pro img.ca49cf46b5827169d1b5.jpg",
+    "index.html": "/Nova-Ecommerce/index.html",
+    "main.e6c13ad2.css.map": "/Nova-Ecommerce/static/css/main.e6c13ad2.css.map",
+    "main.75c7c8d0.js.map": "/Nova-Ecommerce/static/js/main.75c7c8d0.js.map",
+    "787.4c8b65ad.chunk.js.map": "/Nova-Ecommerce/static/js/787.4c8b65ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.75c7c8d0.js"
+  ]
+}

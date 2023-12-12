@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {  Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home";
+import NavBar from "./Components/Home/NavBar";
+import Admin from "./pages/Admin";
+import CreateProduct from "./Components/Admin/CreateProduct";
+import ProductTable from "./Components/Admin/ProductTable";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      
+      
+      <Routes>
+        <Route path="/Nova-Ecommerce" element={<Home />} />
+        <Route path="/Nova/Products" element={<ProductPage />} />
+        <Route  path="/Admin" element={<Admin />}>
+        <Route index element={<CreateProduct />} />
+          <Route path="CreateProduct" element={<CreateProduct />} />
+          <Route path="ProductTable" element={<ProductTable />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

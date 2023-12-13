@@ -32,6 +32,7 @@
     "react-pro-sidebar": "^1.1.0-alpha.1",
     "react-router-dom": "^6.20.1",
     "react-scripts": "^5.0.1",
+    "react-simple-file-upload": "^1.1.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.1",

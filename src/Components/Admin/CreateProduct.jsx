@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import { Button, Form } from "react-bootstrap";
 
 function CreateProduct() {
@@ -17,6 +17,10 @@ function CreateProduct() {
   const selectImage = (e) => {
     setImage(e.target.files[0]);
   };
+  const nullImage = () => {
+    setImage(null);
+  };
+  
 
   const CreateProduct = async (e) => {
     e.preventDefault();
@@ -35,11 +39,17 @@ function CreateProduct() {
           },
         }
       );
-      console.log("created product sucessfully", response.data);
-      setProduct({ title: "", price: "", actualPrice: "" });
-      setImage((event)=>{
-        event.target.files=null
-      });
+      // console.log("created product sucessfully", response.data);
+      if (response.status === 200){
+        setProduct({ title: "", price: "", actualPrice: "" });
+        nullImage();
+        
+        // setImage(null);
+        
+      // setProduct({ title: "", price: "", actualPrice: "" });
+      // setImage((event)=>{
+      //   event.target.value = null;
+      }
     } catch (err) {
       console.error("error posting data", err);
     }
@@ -115,7 +125,7 @@ function CreateProduct() {
         </Form.Group>
 
         <Button variant="contained" className=" button" onClick={CreateProduct}>
-          {"Submit"}
+          {"Add"}
         </Button>
       </Form>
     </>

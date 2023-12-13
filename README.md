@@ -1,1 +1,1 @@
-https://kishore00777.github.io/Nova-Ecommerce-Frontend/
+https://kishore00777.github.io/Nova-Ecommerce
